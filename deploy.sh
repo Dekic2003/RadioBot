@@ -1,9 +1,3 @@
-###########################
-#                         #
-#      deploy script      #
-#        By A.Ajdin       #
-###########################
-
 
 #Pull changes
 git pull
