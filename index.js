@@ -10,7 +10,7 @@ const naxi = [
     'love', 'dance', 'rnb', '', '', '', 'boem', 'jazz',
     'rock', '', '', 'fresh', 'mix', 'latino', 'exyu', 'lounge', '','hype'
 ];
-
+let list='```*naxi - Naxi Radio\n*rsg - RSG Radio\n*orv - ORV Radio\n*feral - Feral Radio\n*glasDrine - Glas Drine\n*kameleon - Kameleon\n*kalman - Kalman\n*antenaZg - Antena Zagreb\n*otvorenMreza - Otvorena Mreza ```';
 function Playing(station , message){
     Currently=station;
     message.channel.send(`Svira ${station}`).then(msg=>{
@@ -74,6 +74,8 @@ client.on('message', async (message) => {
         const connection = await message.member.voice.channel.join();
         connection.play('http://163.172.213.155:8203/;*.mp3');
         Playing('Kalman',message);
+        message.channel.send('Kontakt : 033 772 900 || 033 712 901')
+
 
     }
     if (message.content.startsWith(`${prefix}orv`)) {
@@ -97,8 +99,8 @@ client.on('message', async (message) => {
 
     }
     if(message.content.startsWith(`${prefix}list`)){
-        message.send(
-
+        message.channel.send(
+list
         )
     }
     client.user.setActivity(`${Currently}`,{type:'PLAYING'});
