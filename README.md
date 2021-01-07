@@ -1,8 +1,19 @@
 # RadioBot
-Bot for listening Radios from Balkans
+Discord bot for listening radios from Balkans in your server's voice channel.
 
-## Available Scripts
+## Run project
 
-In the project directory, you can run:
+```sh
+# install dependencies
+npm install
 
-### `npm start`
+# start project
+npm start
+
+```
+
+
+
+
+
+
