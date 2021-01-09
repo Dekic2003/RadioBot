@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run-radio": "node src/index.js"
+    "run-radio-v1": "node v1/index.js",
+    "run-radio-v2": "node src/index.js"
   },
   "author": "",
   "license": "ISC",
